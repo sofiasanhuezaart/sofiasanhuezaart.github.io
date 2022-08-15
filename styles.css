@@ -4,89 +4,110 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     line-height: 2;
-  }
-  h1, h2, h3 {
+}
+
+h1,
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
-  }
-  h1 {
+}
+
+h1 {
     font-size: 2rem;
     margin-bottom: 0;
-  }
-  /* make images flexible */
-  img {
+}
+
+/* make images flexible */
+img {
     max-width: 100%;
-  }
-  a {
+}
+
+a {
     color: #59331d;
-  }
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
-  }
-  header {
+}
+
+header {
     border-bottom: 10px solid #d98555;
-  }
-  /* navbar styling */
-  nav ul {
+}
+
+/* navbar styling */
+nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
-  }
-  nav li {
+}
+
+nav li {
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
-  }
-  /* max width on the image in pixels */
-  nav .logo img {
+}
+
+/* max width on the image in pixels */
+nav .logo img {
     max-width: 150px;
-  }
-  /* flex basis on the image container, li */
-  nav .logo {
+}
+
+/* flex basis on the image container, li */
+nav .logo {
     flex-basis: 100%;
     text-align: center;
-  }
-  nav a {
+}
+
+nav a {
     color: white;
     text-decoration: none;
     display: block;
-  }
-  nav a:hover {
+}
+
+nav a:hover {
     color: #d98555;
-  }
-  /* establishes a white background */
-  .main-bkgd {
+}
+
+/* establishes a white background */
+.main-bkgd {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
     padding-bottom: 300px;
-  }
-  /* sits inside of the white background, centered */
-  .main {
+}
+
+/* sits inside of the white background, centered */
+.main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
-  }
-  article {
+}
+
+article {
     flex-basis: 73%;
-  }
-  figure {
+}
+
+figure {
     margin: 3rem 0 0 0;
     flex-basis: 25%;
     background-color: #59331d;
     border-radius: 10px;
-  }
-  figure img {
+}
+
+figure img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
-  figcaption {
+}
+
+figcaption {
     color: #f2f2f2;
     padding: 0.5rem;
-  }
-  .button {
+}
+
+.button {
     display: inline-block;
     background-color: #59331D;
     border-radius: 10px;
@@ -95,27 +116,52 @@ body {
     color: #f2f2f2;
     text-decoration: none;
     border: 3px solid #59331d;
-  }
-  .button:hover {
+}
+
+.button:hover {
     background-color: #f2f2f2;
     color: #59331d;
-  }
-  footer {
+}
+
+footer {
     color: #f2f2f2;
     text-align: center;
     border-top: 10px solid #d98555;
-  }
-  footer ul {
+}
+
+footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-  }
-  footer a {
+}
+
+footer a {
     color: #f2f2f2;
     font-size: 2rem;
     display: block;
     margin: 0 1rem 3rem 1rem;
-  }
+}
+
+
+/* breakpoint chosen because around this width, the "soup" in "chicken tortilla soup"
+ wraps to the next line. 
+You may have chosen a different dimension and that's fine. 
+Just have a reason for choosing your breakpoint! */
+
+@media (max-width: 375px) {
+
+    /* navbar styling */
+    nav ul {
+        /* padding: 0; */
+        /* margin: 0; */
+        /* list-style-type: none; */
+        /* display: flex; */
+        /* flex-flow: row wrap; */
+        flex-flow: row wrap;
+        /* justify-content: center; */
+    }
+
+}
