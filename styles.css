@@ -47,6 +47,8 @@ nav ul {
 nav li {
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
 }
 
 /* max width on the image in pixels */
@@ -73,7 +75,7 @@ nav a:hover {
 /* establishes a white background */
 .main-bkgd {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
-    padding-bottom: 300px;
+    padding: 30px 30px 300px 30px;
 }
 
 /* sits inside of the white background, centered */
@@ -93,7 +95,7 @@ article {
 figure {
     margin: 3rem 0 0 0;
     flex-basis: 25%;
-    background-color: #59331d;
+
     border-radius: 10px;
 }
 
@@ -151,17 +153,13 @@ footer a {
 You may have chosen a different dimension and that's fine. 
 Just have a reason for choosing your breakpoint! */
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
 
     /* navbar styling */
     nav ul {
-        /* padding: 0; */
-        /* margin: 0; */
-        /* list-style-type: none; */
-        /* display: flex; */
-        /* flex-flow: row wrap; */
+        display: flex;
         flex-flow: row wrap;
-        /* justify-content: center; */
+        justify-content: center;
     }
 
 }
