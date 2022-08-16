@@ -20,6 +20,7 @@ h1 {
 /* make images flexible */
 img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 a {
@@ -125,6 +126,10 @@ figcaption {
     color: #59331d;
 }
 
+.homepage_card {
+    padding: 10px;
+}
+
 footer {
     color: #f2f2f2;
     text-align: center;
@@ -162,4 +167,37 @@ Just have a reason for choosing your breakpoint! */
         justify-content: center;
     }
 
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media (min-width: 820px) {
+    .main {
+        /* border: #59331D solid 2px; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 30px 30px 30px;
+    }
+
+    article {
+        border: #d98555 solid 2px;
+        flex-basis: 48%;
+    }
+
+    div {
+        /* border: #000000 solid 2px; */
+        flex-basis: 50%;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
