@@ -83,10 +83,11 @@ nav a:hover {
 .main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 article {
@@ -179,14 +180,13 @@ Just have a reason for choosing your breakpoint! */
 
 @media (min-width: 820px) {
     .main {
-        /* border: #59331D solid 2px; */
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 30px 30px 30px 30px;
-        flex-direction: row-reverse;
+        padding: 2rem;
+    }
+
+    #third {
+        grid-row: 2;
+        grid-column: 2;
     }
 
     article {
