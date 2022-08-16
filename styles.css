@@ -126,8 +126,10 @@ figcaption {
     color: #59331d;
 }
 
-.homepage_card {
+.card {
     padding: 10px;
+    display: grid;
+    justify-content: space-evenly;
 }
 
 footer {
@@ -184,10 +186,11 @@ Just have a reason for choosing your breakpoint! */
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 30px 30px 30px 30px;
+        flex-direction: row-reverse;
     }
 
     article {
-        border: #d98555 solid 2px;
+        /* border: #d98555 solid 2px; */
         flex-basis: 48%;
     }
 
